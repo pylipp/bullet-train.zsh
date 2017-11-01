@@ -9,6 +9,43 @@
 # Terminal.app - it has significantly better color fidelity.
 
 # ------------------------------------------------------------------------------
+# CUSTOM CONFIGURATION
+# placed here to avoid cluttering .zshrc
+# - substitute powerline symbols
+# - git symbol colors match git status colors
+# ------------------------------------------------------------------------------
+BULLETTRAIN_PROMPT_CHAR=">"
+BULLETTRAIN_PROMPT_ORDER=(
+    status
+    dir
+    virtualenv
+    git
+    cmd_exec_time
+)
+BULLETTRAIN_SOLARIZED_DARK_BG="8"
+BULLETTRAIN_DIR_BG=$BULLETTRAIN_SOLARIZED_DARK_BG
+BULLETTRAIN_DIR_FG=blue
+BULLETTRAIN_VIRTUALENV_BG=$BULLETTRAIN_SOLARIZED_DARK_BG
+BULLETTRAIN_VIRTUALENV_FG="9"
+BULLETTRAIN_VIRTUALENV_PREFIX=""
+BULLETTRAIN_GIT_BG=$BULLETTRAIN_SOLARIZED_DARK_BG
+BULLETTRAIN_GIT_FG="12"
+BULLETTRAIN_GIT_PREFIX=""
+BULLETTRAIN_GIT_DIRTY=""
+BULLETTRAIN_GIT_CLEAN=" %F{green}V%F{$BULLETTRAIN_GIT_FG}"
+BULLETTRAIN_GIT_ADDED=" %F{yellow}+%F{$BULLETTRAIN_GIT_FG}"
+BULLETTRAIN_GIT_MODIFIED=" %F{red}~%F{$BULLETTRAIN_GIT_FG}"
+BULLETTRAIN_GIT_DELETED=" %F{red}x%F{$BULLETTRAIN_GIT_FG}"
+BULLETTRAIN_GIT_UNTRACKED=" %F{cyan}*%F{$BULLETTRAIN_GIT_FG}"
+BULLETTRAIN_GIT_RENAMED=" >"
+BULLETTRAIN_GIT_UNMERGED=" ="
+BULLETTRAIN_GIT_AHEAD=" ^"
+BULLETTRAIN_GIT_BEHIND=" v"
+BULLETTRAIN_GIT_PROMPT_DIVERGED=" Y"
+BULLETTRAIN_EXEC_TIME_BG=$BULLETTRAIN_SOLARIZED_DARK_BG
+BULLETTRAIN_EXEC_TIME_FG=yellow
+
+# ------------------------------------------------------------------------------
 # CONFIGURATION
 # The default configuration, that can be overwrite in your .zshrc file
 # ------------------------------------------------------------------------------
